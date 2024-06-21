@@ -142,3 +142,32 @@
 .about-webinar p{
     margin-left: 50px;
 }
+
+
+/* Start the key point css*/
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.key-points {
+    list-style: none;
+    padding: 0;
+}
+
+.key-points li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.key-points li .icon {
+    margin-right: 10px;
+}
+
+.img-fluid {
+    border-radius: 50%;
+}
