@@ -65,18 +65,16 @@
     display: flex;
     justify-content: center;
     max-width: 60%;
-    height: 25%;
+    padding: 30px;
 }
-
 .colon {
     font-size: 2rem;
     font-weight: bold;
     color: #004a8e;
     align-self: center;
-    margin-top: -50px;
+    margin-top: -30px;
     margin-right: 15px;
 }
-
 .countdown-item {
     margin-right: 20px;
     text-align: center;
@@ -117,9 +115,10 @@
 
 .bfsi-box{
     border: 1px solid white;
+    border-radius: 25px;
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 23px;
     box-shadow: 7px 10px 21px 8px rgba(0, 0, 0, 0.1);
 }
 .bfsi-box h4{
@@ -129,9 +128,10 @@
 
 .about-webinar{
     border: 1px solid white;
+    border-radius: 25px;
     background-color: white;
     color: black;
-    padding: 15px;
+    padding: 18px;
     box-shadow: 7px 10px 21px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
@@ -171,3 +171,165 @@
 .img-fluid {
     border-radius: 50%;
 }
+
+
+
+
+
+/* Register section css start  */
+.register-section{
+    background-color: #f6f7fb;
+}
+.register-section h2{
+    align-items: left;
+    color: black;
+    font-weight: 620;
+}
+.from-start{
+    padding: 20px;
+}
+.form-container {
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container h4 {
+    font-weight: 600;
+}
+.form-container input {
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #aaaaaa;
+    outline: none;
+}
+.form-container .btn {
+    background-color: #007bff;
+    color: #fff;
+}
+.newsletter-checkbox {
+    display: flex;
+    align-items: center;
+}
+.newsletter-checkbox label{
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: -8px;
+}
+
+
+
+
+
+
+/* before footer section css */
+
+.header {
+    background-image: url('/assets/backimage.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 40px 0px;
+    position: relative;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .header .btn-container {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 501;
+  }
+  .header .btn-container a {
+    font-weight: 501;
+  }
+
+  @media (max-width: 767.98px) {
+    .header h1 {
+      font-size: 1.25rem;
+    }
+    .header .btn-container {
+      position: static;
+      transform: none;
+      margin-top: 20px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* Footer section css start */
+
+.footer {
+    background-color: white;
+    padding: 40px 0;
+  }
+.footer .container h5{
+    color: #132a4b !important;
+    font-size: 21px;
+    font-weight: bolder;
+  }
+.footer .container ul li a{
+    color: black !important;
+    font-size: 15px;
+    margin-left: -17px;
+    margin-top: -12px;
+  }
+  .footer .nav-link {
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .footer .nav-link:hover {
+    color: #0056b3;
+  }
+  .footer .contact-info {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 1px;
+  }
+  .footer .contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  #footer-mobile{
+    margin-left: 40px;
+    margin-top: -25px;
+  }
+  .footer .social-icons a img{
+    display: flex;
+    float: right;
+    margin: 10px 7px;
+    font-size: 20px;
+  }
+  .footer .social-icons a img:hover {
+    color: #0056b3;
+  }
+  .footer .copyright {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .footer .copyright .privacy{
+    float: right;
+  }
+  
+
+  @media (max-width: 767.98px) {
+    .footer .nav-item {
+      margin-bottom: 20px;
+    }
+  }
