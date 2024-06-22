@@ -1,37 +1,37 @@
-*{
+* {
     margin: 0px;
 }
 
 /* This is Navbar css */
-.phone-number{
+.phone-number {
     display: flex;
     justify-content: flex-end;
     color: white;
     background: #121a3e;
     margin-bottom: 0px;
 }
-.phone-number img{
+.phone-number img {
     margin-top: 7px;
     height: 15px;
     width: 25px;
     margin-right: 5px;
 }
-.top-navbar nav{
+.top-navbar nav {
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
-.navbar-collapse{
+.navbar-collapse {
     margin: 10px;
 }
-.navbar-collapse ul{
+.navbar-collapse ul {
     margin-bottom: 5px;
 }
-.nav-link{
+.nav-link {
     color: rgb(58, 58, 58) !important;
     font-weight: 501;
     font-size: 18px;
 }
-.contact-btn{
+.contact-btn {
     border-radius: 30px !important;
     border: 1px solid #184191;
     background: #184191;
@@ -39,21 +39,19 @@
     box-shadow: 7px 11px 7px rgba(0, 0, 0, 0.2);
 }
 
-
 /* This is upcoming event css */
-
-.main-heading p{
+.main-heading p {
     color: rgb(58, 58, 58);
     font-weight: 501;
     font-size: 18px;
 }
-.main-heading h1{
+.main-heading h1 {
     color: #171717;
     font-weight: 700;
     font-size: 40px;
 }
 
-.event-img{
+.event-img {
     max-width: 100%;
     margin-left: -100px;
 }
@@ -80,40 +78,35 @@
     text-align: center;
     color: #004a8e;
 }
-
 .countdown-item span {
     font-size: 2rem;
     font-weight: bold;
     color: #004a8e;
     display: block;
 }
-
 .countdown-item div {
     font-size: 1rem;
     color: #004a8e;
 }
-
-.all-boxes{
+.all-boxes {
     height: 10px;
 }
-
-.webinar-box{
+.webinar-box {
     border: 1px solid;
     border-radius: 25px;
     background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(15,15,143,1) 0%, rgba(0,212,255,1) 100%); 
     color: white;
     padding: 10px;
     box-shadow: 7px 10px 21px 8px rgba(0, 0, 0, 0.1);
-
 }
-.webinar-box h5{
+.webinar-box h5 {
     font-weight: 501;
 }
-.webinar-box p{
+.webinar-box p {
     font-size: 15px
 }
 
-.bfsi-box{
+.bfsi-box {
     border: 1px solid white;
     border-radius: 25px;
     background-color: white;
@@ -121,12 +114,12 @@
     padding: 23px;
     box-shadow: 7px 10px 21px 8px rgba(0, 0, 0, 0.1);
 }
-.bfsi-box h4{
+.bfsi-box h4 {
     font-size: 30px;
     font-weight: 501;
 }
 
-.about-webinar{
+.about-webinar {
     border: 1px solid white;
     border-radius: 25px;
     background-color: white;
@@ -135,27 +128,23 @@
     box-shadow: 7px 10px 21px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
-.about-webinar h4{
+.about-webinar h4 {
     margin-left: 50px;
     margin-top: -25px;
 }
-.about-webinar p{
+.about-webinar p {
     margin-left: 50px;
 }
 
-
-/* Start the key point css*/
-
+/* Start the key point css */
 .section-title {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 .key-points {
     list-style: none;
     padding: 0;
 }
-
 .key-points li {
     display: flex;
     align-items: start;
@@ -163,29 +152,23 @@
     font-size: 1rem;
     line-height: 1.5;
 }
-
 .key-points li .icon {
     margin-right: 10px;
 }
-
 .img-fluid {
     border-radius: 50%;
 }
 
-
-
-
-
-/* Register section css start  */
-.register-section{
+/* Register section css start */
+.register-section {
     background-color: #f6f7fb;
 }
-.register-section h2{
+.register-section h2 {
     align-items: left;
     color: black;
     font-weight: 620;
 }
-.from-start{
+.from-start {
     padding: 20px;
 }
 .form-container {
@@ -211,19 +194,13 @@
     display: flex;
     align-items: center;
 }
-.newsletter-checkbox label{
+.newsletter-checkbox label {
     font-size: 10px;
     font-weight: 700;
     margin-top: -8px;
 }
 
-
-
-
-
-
 /* before footer section css */
-
 .header {
     background-image: url('/assets/backimage.png');
     background-size: cover;
@@ -232,104 +209,138 @@
     text-align: left;
     padding: 40px 0px;
     position: relative;
-  }
-  .header h1 {
+}
+.header h1 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
-  }
-  .header .btn-container {
+}
+.header .btn-container {
     position: absolute;
     right: 120px;
     top: 50%;
     transform: translateY(-50%);
     font-weight: 501;
-  }
-  .header .btn-container a {
+}
+.header .btn-container a {
     font-weight: 501;
-  }
+}
 
-  @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
     .header h1 {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
     .header .btn-container {
-      position: static;
-      transform: none;
-      margin-top: 20px;
+        position: static;
+        transform: none;
+        margin-top: 20px;
     }
-  }
-
-
-
-
-
-
-
-
+}
 
 /* Footer section css start */
-
 .footer {
     background-color: white;
     padding: 40px 0;
-  }
-.footer .container h5{
+}
+.footer .container h5 {
     color: #132a4b !important;
     font-size: 21px;
     font-weight: bolder;
-  }
-.footer .container ul li a{
+}
+.footer .container ul li a {
     color: black !important;
     font-size: 15px;
     margin-left: -17px;
     margin-top: -12px;
-  }
-  .footer .nav-link {
+}
+.footer .nav-link {
     color: #000;
     margin-bottom: 10px;
-  }
-  .footer .nav-link:hover {
+}
+.footer .nav-link:hover {
     color: #0056b3;
-  }
-  .footer .contact-info {
+}
+.footer .contact-info {
     background-color: #e9ecef;
     border-radius: 5px;
     padding: 20px;
     margin-top: 1px;
-  }
-  .footer .contact-info a {
+}
+.footer .contact-info a {
     display: block;
     margin-bottom: 10px;
     color: #000;
-  }
-  #footer-mobile{
+}
+#footer-mobile {
     margin-left: 40px;
     margin-top: -25px;
-  }
-  .footer .social-icons a img{
+}
+.footer .social-icons a img {
     display: flex;
     float: right;
     margin: 10px 7px;
     font-size: 20px;
-  }
-  .footer .social-icons a img:hover {
+}
+.footer .social-icons a img:hover {
     color: #0056b3;
-  }
-  .footer .copyright {
-    border-top: 1px solid #ccc;
+}
+.footer .copyright {
+    border-top: 4px solid #ccc; /* Increased border width to make it bold */
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-  }
-  
-  .footer .copyright .privacy{
+}
+.footer .copyright .privacy {
     float: right;
-  }
-  
+}
 
-  @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
     .footer .nav-item {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  }
+}
+
+/* responsiveness */
+@media (max-width: 992px) {
+    .navbar-collapse ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-btn {
+        margin-top: 10px;
+    }
+    .event-img {
+        margin-left: 0;
+    }
+    #countdown {
+        max-width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse ul {
+        display: block;
+        text-align: center;
+    }
+    .header .btn-container {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+    .form-container {
+        padding: 20px;
+    }
+    .register-section h2 {
+        text-align: center;
+    }
+    .about-webinar h4, .about-webinar p {
+        margin-left: 0;
+        text-align: center;
+    }
+    #countdown {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
