@@ -1,44 +1,65 @@
-// Countdown Timer
-const countdown = () => {
-    const countDate = new Date("August 9, 2023 15:00:00").getTime();
-    const now = new Date().getTime();
-    const gap = countDate - now;
+// 1st counter function
+function countdown(targetDate) {
+    const daysElement = document.getElementById('days');
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
 
-    const second = 1000;
-    const minute = second * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
 
-    // Check if the countdown has ended
-    if (gap < 0) {
-        document.querySelector('#days').innerText = '00';
-        document.querySelector('#hours').innerText = '00';
-        document.querySelector('#minutes').innerText = '00';
-        document.querySelector('#seconds').innerText = '00';
-        return;
+        if (timeLeft > 0) {
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            daysElement.textContent = String(days).padStart(2, '0');
+            hoursElement.textContent = String(hours).padStart(2, '0');
+            minutesElement.textContent = String(minutes).padStart(2, '0');
+            secondsElement.textContent = String(seconds).padStart(2, '0');
+        } else {
+            clearInterval(countdownInterval);
+            document.getElementById('countdown').innerHTML = "The event has started!";
+        }
     }
 
-    const textDay = Math.floor(gap / day);
-    const textHour = Math.floor((gap % day) / hour);
-    const textMinute = Math.floor((gap % hour) / minute);
-    const textSecond = Math.floor((gap % minute) / second);
+    const countdownInterval = setInterval(updateCountdown, 1000);
+}
 
-    document.querySelector('#days').innerText = textDay < 10 ? '0' + textDay : textDay;
-    document.querySelector('#hours').innerText = textHour < 10 ? '0' + textHour : textHour;
-    document.querySelector('#minutes').innerText = textMinute < 10 ? '0' + textMinute : textMinute;
-    document.querySelector('#seconds').innerText = textSecond < 10 ? '0' + textSecond : textSecond;
-};
+const targetDate = new Date('2024-07-01T00:00:00').getTime();
+countdown(targetDate);
 
-countdown();
-const intervalId = setInterval(countdown, 1000);
+// 2nd counter function
+function countdownbottam(targetDate) {
+    const daysElement = document.getElementById('days-1');
+    const hoursElement = document.getElementById('hours-1');
+    const minutesElement = document.getElementById('minutes-1');
+    const secondsElement = document.getElementById('seconds-1');
 
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
 
+        if (timeLeft > 0) {
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
+            daysElement.textContent = String(days).padStart(2, '0');
+            hoursElement.textContent = String(hours).padStart(2, '0');
+            minutesElement.textContent = String(minutes).padStart(2, '0');
+            secondsElement.textContent = String(seconds).padStart(2, '0');
+        } else {
+            clearInterval(countdownInterval);
+            document.getElementById('countdown-1').innerHTML = "The event has started!";
+        }
+    }
 
+    const countdownInterval = setInterval(updateCountdown, 1000);
+}
 
-
-
-
-
-
-
+const targetDateee = new Date('2024-07-01T00:00:00').getTime();
+countdownbottam(targetDateee);
