@@ -25,6 +25,7 @@
 }
 .navbar-collapse ul {
     margin-bottom: 5px;
+    margin-right: -31px !important;
 }
 .nav-link {
     color: rgb(58, 58, 58) !important;
@@ -196,7 +197,7 @@
     outline: none;
 }
 .form-container .btn {
-    background-color: #007bff;
+    background-color: #184191;
     color: #fff;
 }
 .newsletter-checkbox {
@@ -233,6 +234,8 @@
 }
 .header .btn-container a {
     font-weight: 501;
+    background-color: #184191;
+    border: none;
 }
 
 @media (max-width: 767.98px) {
